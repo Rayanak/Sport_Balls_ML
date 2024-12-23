@@ -1,0 +1,19 @@
+<!-- templates/result.html -->
+{% extends 'base.html' %}
+
+{% block title %}Результаты классификации{% endblock %}
+
+{% block content %}
+
+<div class="container my-5">
+    <h2 class="text-center mb-4">Результаты классификации</h2>
+
+    <div class="card shadow-sm">
+        <div class="card-body text-center">
+            <h5 class="card-title">Предсказанный класс</h5>
+            <p class="card-text fs-4"><strong>{{ predicted_class }}</strong></p>
+            <a href="{% url 'index' %}" class="btn btn-secondary">Вернуться назад</a>
+        </div>
+    </div>
+</div>
+{% endblock %}
